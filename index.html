@@ -1,0 +1,239 @@
+<html>
+<head>
+    <title>Tech-Quest</title>
+</head>
+<style>
+    body{
+        font-family: "Arial";
+    }
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    font-size:10px;
+    text-align: center;
+    border: 1.7px solid;
+    padding: 8px;
+  }
+  h1{
+    border:1px solid black;
+    text-align:center;
+    margin-bottom:-10;
+    font-weight: normal;
+    font-size: 24px;
+    background-color:#006bb3;
+    color:white;
+    padding-top: 10px;
+    height: 50px;
+  }
+  .sub-item{
+    background-color: #d9e1f2;
+  }
+  .sub-head{
+    background-color: #8ea9db;
+  }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+  .button-add{
+    background-color: green;
+    color: #fff;
+    border-left: black;
+    border-bottom: black;
+    border-color:green;
+  }
+  .button-search{
+    background-color: #305496;
+    color: #fff;
+    border-left: black;
+    border-bottom: black;
+    border-color:#305496;
+  }
+    .button-points{
+        background-color: #c65911;
+        color: #fff;
+        border-left: black;
+        border-bottom: black;
+        border-color:#c65911;
+    }
+    .button-void{
+        background-color: #00b050;
+        color: #fff;
+        border-left: black;
+        border-bottom: black;
+        border-color:#00b050;
+    }
+    .button-void1{
+        background-color: #333f4f;
+        color: #fff;
+        border-left: black;
+        border-bottom: black;
+        border-color:#333f4f;
+        width: 10px;
+    }
+</style>
+<body>
+    <table>
+        <h1>
+          SALES BILL
+        </h1>
+        <tr>
+          <th colspan="11" class="sub-head">INPUT TEXTBOX</th>
+          <th class="sub-head">INPUT TEXTBOX</th>
+            <th rowspan="2" class="button-add">
+                <a href="AddCustomer.html">Add Customer </a>
+            </th>
+        </tr>
+        <tr class="sub-item">
+          <td colspan="5">ITEM NAME 1</td>
+          <td colspan="2">100</td>
+          <td colspan="2">2</td>
+          <td>10</td>
+          <td>210</td>
+          <td rowspan="10"></td>
+        </tr>
+        <tr class="sub-item">
+          <td colspan="5">ITEM NAME 2</td>
+          <td colspan="2">100</td>
+          <td colspan="2">2</td>
+          <td>10</td>
+          <td>210</td>
+          <th rowspan="2" class="button-search">
+            <a href="SearchCustomer.html">
+            Search Product</a>
+            </th>
+        </tr>
+        </tr class="sub-item">
+        <tr class="sub-item">
+          <td colspan="5">ITEM NAME 3</td>
+          <td colspan="2">100</td>
+          <td colspan="2">2</td>
+          <td>10</td>
+          <td>210</td>
+        </tr>
+        <tr class="sub-item">
+            <td colspan="5">ITEM NAME 4</td>
+            <td colspan="2">100</td>
+            <td colspan="2">2</td>
+            <td>10</td>
+            <td>210</td>
+            <th rowspan="2" class="button-points">
+                <a href="#">
+                Points System
+                </a>
+            </th>
+        </tr>
+         <tr class="sub-item">
+            <td colspan="5">ITEM NAME 5</td>
+            <td colspan="2">100</td>
+            <td colspan="2">2</td>
+            <td>10</td>
+            <td>210</td>
+        </tr>
+        <tr class="sub-item">
+            <td colspan="5">ITEM NAME 6</td>
+            <td colspan="2">100</td>
+            <td colspan="2">2</td>
+            <td>10</td>
+            <td>210</td>
+            <th rowspan="2" class="button-void"></th>
+        </tr>
+        <tr class="sub-item">
+            <td colspan="5">ITEM NAME 7</td>
+            <td colspan="2">100</td>
+            <td colspan="2">2</td>
+            <td>10</td>
+            <td>210</td>
+        </tr>
+        <tr class="sub-item">
+            <td colspan="5">ITEM NAME 8</td>
+            <td colspan="2">100</td>
+            <td colspan="2">2</td>
+            <td>10</td>
+            <td>210</td>
+            <th rowspan="2" class="button-void1"></th>
+        </tr>
+        <tr class="sub-item">
+            <td colspan="5">ITEM NAME 9</td>
+            <td colspan="2">100</td>
+            <td colspan="2">2</td>
+            <td>10</td>
+            <td>210</td>
+        </tr>
+        <tr class="sub-item">
+            <td colspan="5">ITEM NAME 10</td>
+            <td colspan="2">100</td>
+            <td colspan="2">2</td>
+            <td>10</td>
+            <td>210</td>
+        </tr>
+        <tr>
+          <td rowspan="2">No of Item</td>
+          <td rowspan="2">10</td>
+          <td colspan="6">GST SUMMARY</td>
+          <td rowspan="2" colspan="2">SUB TOTAL</td>
+          <td rowspan="2">3200</td>
+          <td rowspan="8"></td>
+        </tr>
+        <tr>
+          <td rowspan="2" colspan="2">GST 5%</td>
+          <td rowspan="2">28.5</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+         <tr>
+          <td rowspan="2">No of Qty</td>
+          <td rowspan="2">20</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td rowspan="2" colspan="2">DISCOUNT</td>
+          <td rowspan="2">0</td>
+        </tr>
+        <tr>
+          <td rowspan="2" colspan="2">GST 12%</td>
+          <td rowspan="2">30.2</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td rowspan="2"></td>
+          <td rowspan="2"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td rowspan="2" colspan="2">TAX</td>
+          <td rowspan="2">100</td>
+        </tr>
+        <tr>
+          <td rowspan="2" colspan="2">GST 18%</td>
+          <td rowspan="2">40.1</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td rowspan="2"></td>
+          <td rowspan="2"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td rowspan="2" colspan="2">NET.AMOUNT</td>
+          <td rowspan="2">3300</td>
+        </tr>
+        <tr>
+          <td rowspan="2"></td>
+          <td rowspan="2"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+</body>
+</html>
