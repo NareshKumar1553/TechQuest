@@ -1,0 +1,17 @@
+The task is to design the billing system frontend interview.
+
+ISSUES I FACED:
+	
+	1. I had the confusion in this design was built in the concept of table or Grid system of HTML.
+
+	2. Again, I strucked in the implementation of "rowspan" and "colspan" in table.
+	3. There are too many chaos in the "GST SUMMARY" column, that consume major time in this task.
+
+
+OVERCOMES:
+	
+	1. I assume this was done by tables and I did it.
+	
+	2. Neatly, revise up the basics of the table and slowly implement one by one.
+	3. Implement n number of ideas, finnaly I got the desired design.
+	

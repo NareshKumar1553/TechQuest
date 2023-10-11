@@ -1,11 +1,10 @@
 body{
-        font-family: "Arial";
+    font-family: "Arial";
     }
-table 
-    {
+table {
     border-collapse: collapse;
     width: 100%;
-    }
+  }
   
  td, th {
     font-size:10px;
@@ -24,19 +23,19 @@ table
     padding-top: 10px;
     height: 50px;
   }
-  .sub-item{
-    background-color: #d9e1f2;
+.sub-item{
+  background-color: #d9e1f2;
   }
-  .sub-head{
-    background-color: #8ea9db;
+.sub-head{
+  background-color: #8ea9db;
   }
 a{
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
     
 }
 a:hover{
-    color: #000;
+  color: #000;
 }
 .button-add{
     background-color: green;
@@ -53,40 +52,40 @@ a:hover{
     border-bottom: black;
     border-color:#305496;
   }
-    .button-points{
-        background-color: #c65911;
-        color: #fff;
-        border-left: black;
-        border-bottom: black;
-        border-color:#c65911;
+.button-points{
+    background-color: #c65911;
+    color: #fff;
+    border-left: black;
+    border-bottom: black;
+    border-color:#c65911;
+  }
+.button-void{
+    background-color: #00b050;
+    color: #fff;
+    border-left: black;
+    border-bottom: black;
+    border-color:#00b050;
     }
-    .button-void{
-        background-color: #00b050;
-        color: #fff;
-        border-left: black;
-        border-bottom: black;
-        border-color:#00b050;
-    }
-    .button-void1{
-        background-color: #333f4f;
-        color: #fff;
-        border-left: black;
-        border-bottom: black;
-        border-color:#333f4f;
-        width: 10px;
-    }
-    .header{
-        text-align: center;
-        font-size: 30px;
-        font-weight: bold;
-        margin-bottom: 20px;
-        margin: 15px;
-    }
-    .inputBox{
-        width: 70%;
-        height: 30px;
-        border-radius: 5px;
-        border: 1px solid #999;
-        padding: 5px;
-        margin-bottom: 10px;
-    }
+.button-void1{
+    background-color: #333f4f;
+    color: #fff;
+    border-left: black;
+    border-bottom: black;
+    border-color:#333f4f;
+    width: 10px;
+  }
+.header{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin: 15px;
+  }
+.inputBox{
+    width: 70%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
