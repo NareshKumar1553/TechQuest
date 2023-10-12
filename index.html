@@ -23,20 +23,13 @@
         </h1>
         <div class="overall">
         <table class="table-responsive" id="my-table">
-          <form>
-        <div align="right" class="but">
-          <button type="button" class="btn button-add one" onclick="addRow()" >Add Item</button>
-          <button type="button" class="btn button-search one" onclick="">Search Product</button>
-          <button type="button" class="btn button-points one" onclick="">Points System</button>
-          <button type="button" class="btn button-void one" onclick=""></button>
-          <button type="button" class="btn button-void1 one" onclick=""></button>
-        </div>
+          <form id="my-form">
         <tr>
           <th colspan="11" class="sub-head one">
-            <input type="text" name="input-textbox" placeholder="INPUT TEXTBOX" class="form-control-sm no-border input-term">
+            <input type="text" placeholder="INPUT TEXTBOX" name="item-name" class="form-control-sm no-border input-term">
           </th>
           <th class="sub-head" class="one" rowspan="">
-            <input type="text" name="input-textbox" placeholder="INPUT TEXTBOX" class="form-control-sm no-border input-term">
+            <input type="text" placeholder="INPUT TEXTBOX" class="form-control-sm no-border input-term">
           </th>
             <!-- <th rowspan="2" class="button-add one">
               <button type="button" class="btn" onclick="addRow()" >Add Item</button>
@@ -193,6 +186,13 @@
         </tr> 
       </form>
       </table>
+      <div align="right" class="but">
+        <button type="button" class="btn button-add one" onclick="addRow()" >Add Item</button>
+        <button type="button" class="btn button-search one" onclick="">Search Product</button>
+        <button type="button" class="btn button-points one" onclick="">Points System</button>
+        <button type="button" class="btn button-void one" onclick=""></button>
+        <button type="button" class="btn button-void1 one" onclick=""></button>
+      </div>
     </div>
       <div style="display: flex;flex-direction: row;">
       <button type="button" class="btn button-add three" onclick="addRow()" >Add Item</button>
