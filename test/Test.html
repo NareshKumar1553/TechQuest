@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        @media screen and (max-width: 600px) {
+            table {
+                border: 0;
+            }
+            table caption {
+                font-size: 1.3em;
+            }
+            table thead {
+                display: none;
+            }
+            table tr {
+                margin-bottom: 10px;
+                display: block;
+                border-bottom: 2px solid #ddd;
+            }
+            table td {
+                display: block;
+                text-align: right;
+                font-size: 13px;
+                border-bottom: 1px dotted #ddd;
+            }
+            table td:before {
+                content: attr(data-label);
+                float: left;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            table td:last-child {
+                border-bottom: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <caption>Example Table</caption>
+    <thead>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+            <th>Header 4</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-label="Header 1">Row 1, Column 1</td>
+            <td data-label="Header 2">Row 1, Column 2</td>
+            <td data-label="Header 3">Row 1, Column 3</td>
+            <td data-label="Header 4">Row 1, Column 4</td>
+        </tr>
+        <tr>
+            <td data-label="Header 1">Row 2, Column 1</td>
+            <td data-label="Header 2">Row 2, Column 2</td>
+            <td data-label="Header 3">Row 2, Column 3</td>
+            <td data-label="Header 4">Row 2, Column 4</td>
+        </tr>
+        <tr>
+            <td data-label="Header 1">Row 3, Column 1</td>
+            <td data-label="Header 2">Row 3, Column 2</td>
+            <td data-label="Header 3">Row 3, Column 3</td>
+            <td data-label="Header 4">Row 3, Column 4</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

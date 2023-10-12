@@ -1,11 +1,25 @@
 body{
     font-family: "Arial";
+    /* display: flex;
+    flex-direction: column; */
     }
 table {
     border-collapse: collapse;
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
-  
+.input-term{
+  background-color: #8ea9db;
+  color: #000;
+}
+.form-control {
+    border: 0;
+}
+.no-border {
+    border: 0;
+    box-shadow: none; /* You may want to include this as bootstrap applies these styles too */
+}
  td, th {
     font-size:10px;
     text-align: center;
