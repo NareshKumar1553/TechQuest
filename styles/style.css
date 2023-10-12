@@ -1,24 +1,21 @@
 body{
     font-family: "Arial";
-    /* display: flex;
-    flex-direction: column; */
     }
 table {
     border-collapse: collapse;
     width: 100%;
-    display: flex;
-    flex-direction: column;
   }
 .input-term{
   background-color: #8ea9db;
   color: #000;
+  width: 100%;
 }
 .form-control {
     border: 0;
 }
 .no-border {
     border: 0;
-    box-shadow: none; /* You may want to include this as bootstrap applies these styles too */
+    box-shadow: none;
 }
  td, th {
     font-size:10px;
@@ -26,15 +23,15 @@ table {
     border: 1.7px solid;
     padding: 8px;
   }
-  h1{
+h1{
     border:1px solid black;
     text-align:center;
-    margin-bottom:-10;
+    margin-bottom:0;
     font-weight: normal;
     font-size: 24px;
     background-color:#006bb3;
     color:white;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     height: 50px;
   }
 .sub-item{
@@ -103,3 +100,40 @@ a:hover{
     padding: 5px;
     margin-bottom: 10px;
   }
+
+  @media screen and (max-width: 600px) {
+    table {
+        border: 0;
+    }
+    table caption {
+        font-size: 1.3em;
+    }
+    table thead {
+        display: none;
+    }
+    table tr {
+        margin-bottom: 10px;
+        display: block;
+        border-bottom: 2px solid #ddd;
+    }
+    table td {
+        display: block;
+        text-align: right;
+        font-size: 13px;
+        border-bottom: 1px dotted #ddd;
+    }
+    table td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    table td:last-child {
+        border-bottom: 0;
+    }
+}
+@media only screen and (max-width: 900px) {
+  .one{
+      display: none;
+  }
+}
