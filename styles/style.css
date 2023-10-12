@@ -5,6 +5,10 @@ table {
     border-collapse: collapse;
     width: 100%;
   }
+.overall{
+  display: flex;
+  flex-direction: row-reverse;
+  }
 .input-term{
   background-color: #8ea9db;
   color: #000;
@@ -48,12 +52,19 @@ a{
 a:hover{
   color: #000;
 }
+.but{
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+}
 .button-add{
     background-color: green;
     color: #fff;
     border-left: black;
     border-bottom: black;
     border-color:green;
+    width: 100px;
+    height: 65px;
   }
 .button-search
     {
@@ -62,6 +73,8 @@ a:hover{
     border-left: black;
     border-bottom: black;
     border-color:#305496;
+    width: 100px;
+    height: 65px;
   }
 .button-points{
     background-color: #c65911;
@@ -69,6 +82,8 @@ a:hover{
     border-left: black;
     border-bottom: black;
     border-color:#c65911;
+    width: 100px;
+    height: 65px;
   }
 .button-void{
     background-color: #00b050;
@@ -76,6 +91,8 @@ a:hover{
     border-left: black;
     border-bottom: black;
     border-color:#00b050;
+    width: 100px;
+    height: 65px;
     }
 .button-void1{
     background-color: #333f4f;
@@ -83,7 +100,8 @@ a:hover{
     border-left: black;
     border-bottom: black;
     border-color:#333f4f;
-    width: 10px;
+    width: 100px;
+    height: 65px;
   }
 .header{
     text-align: center;
@@ -132,8 +150,16 @@ a:hover{
         border-bottom: 0;
     }
 }
-@media only screen and (max-width: 900px) {
+.three {
+  display: none; 
+}
+@media only screen and (max-width: 600px) {
   .one{
       display: none;
+  }
+}
+@media (max-width: 550px) {
+  .three {
+      display: block;
   }
 }
