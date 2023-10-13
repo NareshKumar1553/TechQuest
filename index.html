@@ -25,107 +25,19 @@
         <table class="table-responsive" id="my-table">
           <form id="my-form">
         <tr>
-          <th colspan="11" class="sub-head one">
-            <input type="text" placeholder="INPUT TEXTBOX" name="item-name" class="form-control-sm no-border input-term">
+          <th colspan="11" class="sub-head">
+            <input type="text" placeholder="ENTER THE ITEM NAME" name="item-name" class="form-control-sm no-border input-term">
           </th>
           <th class="sub-head" class="one" rowspan="">
-            <input type="text" placeholder="INPUT TEXTBOX" class="form-control-sm no-border input-term">
+            <input type="text" placeholder="ENTER THE QUANTITY" name="item-qty" class="form-control-sm no-border input-term">
           </th>
-            <!-- <th rowspan="2" class="button-add one">
-              <button type="button" class="btn" onclick="addRow()" >Add Item</button>
-            </th> -->
         </tr>
-        <!-- <tr class="sub-item">
-          <td colspan="5">ITEM NAME 1</td>
-          <td colspan="2">100</td>
-          <td colspan="2">2</td>
-          <td>10</td>
-          <td>210</td>
-          <td rowspan="10"></td>
-        </tr> -->
-        <!-- <tr class="sub-item">
-          <td colspan="5">ITEM NAME 2</td>
-          <td colspan="2">100</td>
-          <td colspan="2">2</td>
-          <td>10</td>
-          <td>210</td> -->
-          <!-- <th rowspan="2" class="button-search one">
-            <button type="button" class="btn" onclick="addRow()" >Search Product</button>
-            </th> -->
-        <!-- </tr> -->
-          <!-- </tr>
-        <tr class="sub-item">
-          <td colspan="5">ITEM NAME 3</td>
-          <td colspan="2">100</td>
-          <td colspan="2">2</td>
-          <td>10</td>
-          <td>210</td>
-        </tr>
-        <tr class="sub-item">
-            <td colspan="5">ITEM NAME 4</td>
-            <td colspan="2">100</td>
-            <td colspan="2">2</td>
-            <td>10</td>
-            <td>210</td> -->
-            <!-- <th rowspan="2" class="button-points one">
-              <button type="button" class="btn" onclick="" >Points System</button>
-            </th> -->
-        <!-- </tr>
-         <tr class="sub-item">
-            <td colspan="5">ITEM NAME 5</td>
-            <td colspan="2">100</td>
-            <td colspan="2">2</td>
-            <td>10</td>
-            <td>210</td>
-        </tr>
-        <tr class="sub-item">
-            <td colspan="5">ITEM NAME 6</td>
-            <td colspan="2">100</td>
-            <td colspan="2">2</td>
-            <td>10</td>
-            <td>210</td> -->
-            <!-- <th rowspan="2" class="button-void one">
-              <button type="button" class="btn" onclick="" ></button>
-            </th> -->
-        <!-- </tr>
-        <tr class="sub-item">
-            <td colspan="5">ITEM NAME 7</td>
-            <td colspan="2">100</td>
-            <td colspan="2">2</td>
-            <td>10</td>
-            <td>210</td>
-        </tr>
-        <tr class="sub-item">
-            <td colspan="5">ITEM NAME 8</td>
-            <td colspan="2">100</td>
-            <td colspan="2">2</td>
-            <td>10</td>
-            <td>210</td> -->
-            <!-- <th rowspan="2" class="button-void1 one">
-              <button type="button" class="btn" onclick="" ></button>
-            </th> -->
-        <!-- </tr>
-        <tr class="sub-item">
-            <td colspan="5">ITEM NAME 9</td>
-            <td colspan="2">100</td>
-            <td colspan="2">2</td>
-            <td>10</td>
-            <td>210</td>
-        </tr>
-        <tr class="sub-item">
-            <td colspan="5">ITEM NAME 10</td>
-            <td colspan="2">100</td>
-            <td colspan="2">2</td>
-            <td>10</td>
-            <td>210</td>
-        </tr>
-      -->
         <tr>
           <td rowspan="2">No of Item</td>
-          <td rowspan="2">10</td>
+          <td rowspan="2" id="NoItem">0</td>
           <td colspan="6">GST SUMMARY</td>
           <td rowspan="2" colspan="2">SUB TOTAL</td>
-          <td rowspan="2">3200</td>
+          <td rowspan="2" id="subTotal">0</td>
           <td rowspan="8"></td>
         </tr>
         <tr>
@@ -137,7 +49,7 @@
         </tr>
          <tr>
           <td rowspan="2">No of Qty</td>
-          <td rowspan="2">20</td>
+          <td rowspan="2" id="NoQuantity">0</td>
           <td class="one"></td>
           <td class="one"></td>
           <td class="one"></td>
@@ -158,7 +70,7 @@
           <td class="one"></td>
           <td class="one"></td>
           <td rowspan="2" colspan="2">TAX</td>
-          <td rowspan="2">100</td>
+          <td rowspan="2" id="tax">0</td>
         </tr>
         <tr>
           <td rowspan="2" colspan="2">GST 18%</td>
@@ -174,7 +86,7 @@
           <td class="one"></td>
           <td class="one"></td>
           <td rowspan="2" colspan="2">NET.AMOUNT</td>
-          <td rowspan="2">3300</td>
+          <td rowspan="2" id="NETAmount">0</td>
         </tr>
         <tr>
           <td rowspan="2" class="one"></td>
@@ -186,21 +98,33 @@
         </tr> 
       </form>
       </table>
-      <div align="right" class="but">
+      <!-- FOR THE LAPTOP/TABLET/DESTOP SCREEN'S -->
+      <div align="right" class="buttons">
         <button type="button" class="btn button-add one" onclick="addRow()" >Add Item</button>
-        <button type="button" class="btn button-search one" onclick="">Search Product</button>
-        <button type="button" class="btn button-points one" onclick="">Points System</button>
-        <button type="button" class="btn button-void one" onclick=""></button>
-        <button type="button" class="btn button-void1 one" onclick=""></button>
+        <button type="button" class="btn button-search one" onclick="href('lib/SearchProduct.html')">Search Product</button>
+        <button type="button" class="btn button-points one" onclick="href('lib/PointingSystem.html')">Points System</button>
+        <button type="button" class="btn button-void one" onclick="href('https://nareshkumar.allgen.tech/')">About</button>
+        <button type="button" class="btn button-void1 one" onclick="href('lib/AddCustomer.html')">Add Customer</button>
       </div>
     </div>
+    <!-- FOR THE MOBILE SCREEN'S -->
       <div style="display: flex;flex-direction: row;">
       <button type="button" class="btn button-add three" onclick="addRow()" >Add Item</button>
-      <button type="button" class="btn button-search three" onclick="" >Search Product</button>
-      <button type="button" class="btn button-points three" onclick="" >Points System</button>
-      <button type="button" class="btn button-void three" onclick="" ></button>
-      <button type="button" class="btn button-void1 three" onclick="" ></button>
+      <button type="button" class="btn button-search three" onclick="href('lib/SearchProduct.html')" >Search Product</button>
+      <button type="button" class="btn button-points three" onclick="href('lib/PointingSystem.html')" >Points System</button>
+      <button type="button" class="btn button-void three" onclick="href('https://nareshkumar.allgen.tech/')" >About</button>
+      <button type="button" class="btn button-void1 three" onclick="href('lib/AddCustomer.html')" >Add Customer</button>
     </div>
-  
+    <div class="Instruction">
+      <h5>INSTRUCTIONS TO USE</h5>
+      <ol class="myUL">
+        <li>This was an billing site. You can add 'N' Number items.</li>
+        <li>To add the item just enter the "Item_name" and "Quantity".</li>
+        <li>It will automatically create the row and calculate the summary.</li>
+        <li>If you want to delete the item just click the "Delete" button.</li>
+        <li>This page made responsively for both Mobile users and Laptop users.</li>
+      </ol>
+    </div>
+  </div>
 </body>
 </html>
