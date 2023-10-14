@@ -1,17 +1,26 @@
-The task is to design the billing system frontend interview.
+					The task is to design the "Billing system" front-end.
+Advantages:
+	1.Advanced CSS and HTML concepts are used in this task.
+	2. I have used the concept of table and grid system in this task.
+	3. I have used the concept of rowspan and colspan in this task.
+	4. I have used the concept of flexbox in this task.
+	5. I implemented the design in the mobile responsive manner.
+	6. The Table was expanded based on the number of items in the cart.
+	7. The GST summary was designed in the table format.
+	8. The total amount was calculated based on the number of items in the cart.
 
 ISSUES I FACED:
 	
 	1. I had the confusion in this design was built in the concept of table or Grid system of HTML.
-
 	2. Again, I strucked in the implementation of "rowspan" and "colspan" in table.
 	3. There are too many chaos in the "GST SUMMARY" column, that consume major time in this task.
+	4. I had the confusion in the implementation of the "TOTAL AMOUNT" column.
 
 
 OVERCOMES:
 	
 	1. I assume this was done by tables and I did it.
-	
 	2. Neatly, revise up the basics of the table and slowly implement one by one.
 	3. Implement n number of ideas, finnaly I got the desired design.
+	
 	
